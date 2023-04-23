@@ -4,6 +4,10 @@ import "./TodoInput.css";
 const TodoInput = () => {
   const [task, setTask] = useState();
 
+  const handleSubmit = () => {
+    e.preventDefault();
+  };
+
   return (
     <form className="TodoInput" onSubmit={handleSubmit}>
       <input
@@ -14,6 +18,7 @@ const TodoInput = () => {
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
+      <button>Add Todo</button>
     </form>
   );
 };
