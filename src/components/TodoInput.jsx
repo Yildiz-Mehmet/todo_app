@@ -4,7 +4,7 @@ import "./TodoInput.css";
 const TodoInput = () => {
   const [task, setTask] = useState();
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
 
