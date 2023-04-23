@@ -14,7 +14,6 @@ const TodoInput = () => {
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
-      {task}
     </form>
   );
 };
